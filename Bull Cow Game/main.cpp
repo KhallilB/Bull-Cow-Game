@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -14,8 +15,20 @@ int main() {
     
     constexpr int WORD_LENGTH = 5;
     
-    ::cout << "Welcome To Bulls and Cows a fun word game." << ::endl;
+    //Introduces the game
+    ::cout << "Welcome To Bulls and Cows a fun word game.\n";
     ::cout << "Can You guess the " << WORD_LENGTH;
     ::cout << " letter isogram I'm thinking of?\n";
+    ::cout << endl;
+    
+    //Get Guess
+    ::cout << "Enter Your Guess: ";
+    ::string Guess = "";
+    ::cin >> Guess;
+    
+    //Rpeat back to them
+    cout << "Your guess was: " << Guess;
+    
+    cout << endl;
     return 0;
 }
