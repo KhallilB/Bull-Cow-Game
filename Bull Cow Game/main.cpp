@@ -12,6 +12,7 @@
 using namespace std;
 
 void PrintIntro();
+void GuessesLeft(int guesses);
 string GetGuessAndPrint();
 
 //Start of Application
@@ -19,10 +20,11 @@ int main() {
     
     PrintIntro();
     
-    //Loop for guesses player gets
+    //Loop for player guess and number gueesses
     constexpr int NUMBER_OF_TURNS = 5;
     for (int count = 1; count <= NUMBER_OF_TURNS; count++) {
         GetGuessAndPrint();
+        GuessesLeft(NUMBER_OF_TURNS);
     }
     
     
@@ -39,6 +41,13 @@ void PrintIntro() {
     ::cout << "Welcome To Bulls and Cows, a fun word game.\n";
     ::cout << "Can You guess the " << WORD_LENGTH;
     ::cout << " letter isogram I'm thinking of?\n";
+    ::cout << endl;
+}
+
+
+void GuessesLeft(int guesses) {
+    //Tells player how many guess they have left
+    ::cout << "You have " << guesses << " left.";
     ::cout << endl;
 }
 
