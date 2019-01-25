@@ -8,7 +8,9 @@
 
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    
+    ::cout << "Welcome To Bulls and Cows\n" << ::endl;
     return 0;
 }
