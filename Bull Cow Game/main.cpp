@@ -24,10 +24,11 @@ int main() {
     //Get Guess
     ::cout << "Enter Your Guess: ";
     ::string Guess = "";
-    ::cin >> Guess;
+    getline(cin, Guess);
     
     //Rpeat back to them
     cout << "Your guess was: " << Guess;
+    
     
     cout << endl;
     return 0;
