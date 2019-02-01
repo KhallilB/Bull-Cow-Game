@@ -16,11 +16,13 @@
 class FBullCowGame {
     
 public:
-    void Reset(); //TODO give a return value.
-    int GetMaxTries();
-    int GetCurrentTry;
-    bool IsGameWon();
-    bool CheckGues(std::string);
+    FBullCowGame(); //constructor
+    
+    void Reset() ; //TODO give a return value.
+    int GetMaxTries() const;
+    int GetCurrentTry() const;
+    bool IsGameWon() const;
+    bool CheckGuess(std::string) ;
     
 private:
     int MyCurrentTry;
